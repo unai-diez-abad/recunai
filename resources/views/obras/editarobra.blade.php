@@ -6,7 +6,7 @@
 
 <div class="container mt-5">
     <h2 class="text-center mb-5">Obra</h2>
-    <form class="mx-auto" style="max-width: 500px;" action="{{route('obra.update',['id'=>$obra->id])}}" method="post">
+    <form class="mx-auto" style="max-width: 500px;" action="{{route('obra.update',['id'=>$obra->id])}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
       <label for="Solicitante">Solicitante</label>

@@ -34,7 +34,7 @@
                                 </div>
                             @endif
                             <!--FORMULARIO INICIO SESION -->
-                            <form class="form-login" action="{{ route('login.check') }}" method="POST">
+                            <form class="form-login" action="{{ route('login.check') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <!-- Input del email -->
                                 <div class="form-outline mb-4">

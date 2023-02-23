@@ -12,7 +12,7 @@
     <h3>Todos los campos son obligatorios</h3>
      </div>
     @endif
-    <form class="mx-auto" style="max-width: 500px;" action="{{route('obra.store')}}" method="post">
+    <form class="mx-auto" style="max-width: 500px;" action="{{route('obra.store')}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
       <label for="Solicitante">Solicitante</label>

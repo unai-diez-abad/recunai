@@ -12,7 +12,7 @@
     <h3>Todos los campos son obligatorios</h3>
      </div>
     @endif
-    <form class="mx-auto" style="max-width: 500px;" action="{{route('comentario.store',['id'=>$id])}}" method="post">
+    <form class="mx-auto" style="max-width: 500px;" action="{{route('comentario.store',['id'=>$id])}}" method="post" enctype="multipart/form-data">
     @csrf
     <input type="hidden"  name="usuario_id" id="usuario_id" value="{{auth()->guard('usuario')->user()->id}}" >
     <input type="hidden"  name="obra_id" id="obra_id" value="{{ $id }}" >

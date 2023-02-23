@@ -32,7 +32,7 @@
                                 </div>
                             @endif
                             <!--FORMULARIO INICIO SESION -->
-                            <form class="form-login" action="{{ route('register.store') }}" method="POST">
+                            <form class="form-login" action="{{ route('register.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <!-- Input del nombre -->
                                 <div class="form-outline mb-4">
