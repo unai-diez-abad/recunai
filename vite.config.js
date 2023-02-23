@@ -11,7 +11,7 @@ export default defineConfig({
     },
     plugins: [
         laravel({
-            input: ['resources/css/app.scss', 'resources/js/app.js','resources/sass/app.scss', 'resources/js/contrasena.js'],
+            input: ['resources/css/app.css', 'resources/js/app.js','resources/sass/app.scss', 'resources/js/contrasena.js'],
             refresh: true,
         }),
         vue({
