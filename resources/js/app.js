@@ -9,5 +9,5 @@ createApp(App).mount("#unapp");
 //manuales
 
 import.meta.glob([
-    '../images/**'
+    '../image/**'
 ]);
