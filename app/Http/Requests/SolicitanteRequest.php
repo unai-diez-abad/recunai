@@ -24,10 +24,10 @@ class SolicitanteRequest extends FormRequest
         return [
             'nombre'=>'required|string',
             'apellidos'=>'required|string',
-            'DNI'=>['required|string',Rule::unique('posts', 'DNI')->ignore($this->post)],
+            'DNI'=>'required|string|unique:users',
             'direcion_residencia'=>'required|string',
-            'email'=> ['required|email', Rule::unique('posts', 'email')->ignore($this->post)],
-            'tel'=> ['required|numeric',Rule::unique('posts', 'tel')->ignore($this->post)],
+            'email'=> 'required|email|unique:users',
+            'tel'=> 'required|numeric|unique:users',
         ];
     }
 }
