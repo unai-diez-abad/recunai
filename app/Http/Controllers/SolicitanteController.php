@@ -42,7 +42,7 @@ class SolicitanteController extends Controller
             'tel'=> $validated['tel'],
         ]);
         
-        return redirect()->route('inicio')->with('status', 'Solicitante creado!');
+        return redirect()->route('obra.inicio')->with('status', 'Solicitante creado!');
     }
 
     /**
