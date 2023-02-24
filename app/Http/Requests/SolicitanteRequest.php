@@ -24,10 +24,10 @@ class SolicitanteRequest extends FormRequest
         return [
             'nombre'=>'required|string',
             'apellidos'=>'required|string',
-            'DNI'=>'required|string|unique:users',
+            'DNI'=>'required|string|unique:solicitantes',
             'direcion_residencia'=>'required|string',
-            'email'=> 'required|email|unique:users',
-            'tel'=> 'required|numeric|unique:users',
+            'email'=> 'required|email|unique:solicitantes',
+            'tel'=> 'required|numeric|unique:solicitantes',
         ];
     }
 }
